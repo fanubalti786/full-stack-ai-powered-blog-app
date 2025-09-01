@@ -11,7 +11,7 @@ export default function BlogCard({blog}) {
       <span className='inline-block bg-primary/20 rounded-full ml-5 mt-4 py-1 px-3'>{category}</span>
       <div className='p-5'>
         <h5 className='mb-2 font-medium text-gray-900'>{title}</h5>
-        <p className='font-xs text-gray-500'>{description.slice(0,80)}</p>
+        <p className='font-xs text-gray-500' dangerouslySetInnerHTML={{"__html": description.slice(0,80)}}></p>
       </div>
     </div>
   )
