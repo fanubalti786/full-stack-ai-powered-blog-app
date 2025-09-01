@@ -7,7 +7,7 @@ export default function BlogList() {
   const [menu, setMenue] = useState("All");
   return (
     <div>
-      <div className="flex gap-4 justify-center my-10 border-2 sm:gap-8">
+      <div className="flex gap-4 justify-center my-10 sm:gap-8">
         {blogCategories.map((item, index) => (
           <button
             onClick={() => setMenue(item)}
