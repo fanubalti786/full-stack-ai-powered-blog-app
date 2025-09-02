@@ -8,10 +8,10 @@ export default function BlogCard({blog}) {
     className='rounded-lg overflow-hidden shadow hover:scale-102 hover:shadow-primary/25
     duration-300 cursor-pointer w-full'>
       <img src={image} alt="" className='aspect-video' />
-      <span className='inline-block bg-primary/20 rounded-full ml-5 mt-4 py-1 px-3'>{category}</span>
+      <span className='inline-block bg-primary/20 rounded-full ml-5 mt-4 py-1 px-3 text-xs text-primary'>{category}</span>
       <div className='p-5'>
         <h5 className='mb-2 font-medium text-gray-900'>{title}</h5>
-        <p className='font-xs text-gray-500' dangerouslySetInnerHTML={{"__html": description.slice(0,80)}}></p>
+        <p className='text-xs text-gray-600' dangerouslySetInnerHTML={{"__html": description.slice(0,80)}}></p>
       </div>
     </div>
   )
