@@ -4,6 +4,7 @@ import Moment from "moment";
 import Footer from "../components/Footer";
 import { assets, blog_data, comments_data } from "../assets/assets";
 import Navbar from "../components/Navbar";
+import Loading from "../components/Loading";
 
 export default function Blog() {
   const { id } = useParams();
@@ -141,6 +142,6 @@ export default function Blog() {
       <Footer/>
     </div>
   ) : (
-    <div>Loding...</div>
+    <Loading/>
   );
 }
