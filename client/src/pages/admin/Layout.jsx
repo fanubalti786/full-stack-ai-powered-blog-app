@@ -32,7 +32,7 @@ export default function Layout() {
       <div className="flex h-[calc(100vh-70px)] ">
 
         <div className=""><Sidebar/></div>
-        {/* <div className="border mx-1">< Outlet/></div> */}
+        <div className="border mx-1">< Outlet/></div>
         
         
        </div>
