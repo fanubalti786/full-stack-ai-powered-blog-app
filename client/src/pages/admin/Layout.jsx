@@ -29,10 +29,10 @@ export default function Layout() {
       </div>
 
 
-      <div className="flex h-[calc(100vh-70px)] ">
+      <div className="flex min-h-[calc(100vh-70px)] ">
 
         <div className=""><Sidebar/></div>
-        <div className="border mx-1">< Outlet/></div>
+        <div className="flex-1 p-4 md:p-10 bg-blue-50/50 border">< Outlet/></div>
         
         
        </div>

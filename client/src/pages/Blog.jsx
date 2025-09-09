@@ -35,7 +35,7 @@ export default function Blog() {
       <img
         src={assets.gradientBackground}
         alt=""
-        className="absolute -top-50 opacity-50"
+        className="absolute -top-50 opacity-50  "
       />
       <Navbar />
 
