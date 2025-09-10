@@ -13,7 +13,7 @@ import Login from "./components/admin/Login";
 
 export default function App() {
 
-  const isLoggedIn = true;
+  // const isLoggedIn = true;
 
   function NotFound() {
   return <h1>❌ Page Not Found</h1>;
@@ -28,9 +28,11 @@ function AdminNotFound() {
         {/* Admin Routes */}
       <Route
         path="/admin"
-        element={isLoggedIn ? <Layout /> : <Login />}
+        // element={isLoggedIn ? <Layout /> : <Login />}
+        element={<Layout /> }
+
       >
-        {isLoggedIn && (
+        {/* {isLoggedIn && ( */}
           <>
             <Route index element={<Dashboard />} />
             <Route path="addBlog" element={<AddBlog />} />
@@ -39,11 +41,12 @@ function AdminNotFound() {
             {/* Agar /admin ke andar koi unknown path ho */}
             {/* <Route path="*" element={<AdminNotFound />} /> */}
           </>
-        )}
+        {/* )} */}
       </Route>
       {/* Normal Routes */}
         <Route path="/" element={<Home />} />
         <Route path="/blog/:id" element={<Blog />} />
+        <Route path="/login" element={<Login/>} />
         <Route path="/test" element={<Test/>} />
         <Route path="*" element={<NotFound />} />
         <Route path="/admin/*" element={<AdminNotFound />} />

@@ -10,10 +10,12 @@
 }
 
 @theme{
-  /* --color-primary: #5044E5 */
-  --color-primary: green
+  --color-primary: #5044E5
+  
+  /* --color-primary: #5F9EA0 */
 
 }
+
 
 .rich-text { font-size: 15px;  }
 

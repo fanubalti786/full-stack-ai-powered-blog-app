@@ -32,12 +32,14 @@ export default function Blog() {
   }, []);
   return data ? (
     <div className="relative">
+      <Navbar/>
+
       <img
         src={assets.gradientBackground}
         alt=""
-        className="absolute -top-50 opacity-50  "
+        className="absolute -top-50 opacity-50 -z-1 "
       />
-      <Navbar />
+      
 
       <div className="text-center text-gray-700 mt-20">
         <p className="font-medium text-primary py-4 ">
