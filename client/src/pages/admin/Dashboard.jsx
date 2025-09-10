@@ -23,7 +23,7 @@ export default function Dashboard() {
   return (
     <div className='flex-1 p-4 md:p-10 bg-blue-50/50'>
     
-      <div className='flex flex-wrap gap-4 bg-white overflow-y-auto scrollbar-hide '>
+      <div className='flex flex-wrap gap-4 overflow-y-auto scrollbar-hide '>
 
         <div className='flex items-center p-4 gap-4  bg-white w-58 rounded shadow-lg
         cursor-pointer hover:scale-105 transition-all '>
@@ -61,7 +61,7 @@ export default function Dashboard() {
           <p>Latest Blogs</p>
         </div>
 
-        <div className='max-w-4xl relative rounded-lg shadow b'>
+        <div className='h-[350px] max-w-4xl relative rounded-lg shadow overflow-y-auto scrollbar-hide'>
           <table className='w-full text-sm text-gray-600'>
             <thead className='text-xs text-left uppercase'>
               <tr>
@@ -82,6 +82,7 @@ export default function Dashboard() {
           </table>
         </div>
       </div>
+
     </div>
   )
 }

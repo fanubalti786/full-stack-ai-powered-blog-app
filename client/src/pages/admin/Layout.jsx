@@ -29,7 +29,7 @@ export default function Layout() {
       </div>
 
 
-      <div className="flex max-h-[calc(100vh-70px)] ">
+      <div className="flex h-[calc(100vh-70px)] ">
 
         <div className=""><Sidebar/></div>
         < Outlet/>

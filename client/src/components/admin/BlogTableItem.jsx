@@ -18,8 +18,8 @@ export default function BlogTableItem({blog,fetchBlogs,index}) {
             >{blog.isPublished ? "Published":"Unpublished" }</p>
         </td>
         <td className='px-2 py-4 flex text-xs gap-3'>
-            <button className='px-2 py-0.5 rounded cursor-pointer'
-            >{blog.isPublished ? "Published":"Unpublished" }</button>
+            <button className='px-2 py-0.5 rounded cursor-pointer border'
+            >{blog.isPublished ? "Unpublished":"Published" }</button>
             <img src={assets.cross_icon} alt="" className='w-8 hover:scale-110 transition-all'/>
 
         </td>
